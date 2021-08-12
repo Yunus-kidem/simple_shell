@@ -176,7 +176,7 @@ Project Done in 15 Day
 
 ## Authors
 * Yunus Kidem [Yunus-Kidem](https://github.com/Theemiss)
-* Obed Amoako [ ](https://github.com/)
+* Obed Amoako [Obed Amoako ](https://github.com/Obed101)
 
 <p align="center">
   <img src="https://lh3.googleusercontent.com/dGNCpJSFY19ck4PkKuIL3ckLjPElmmvUQJSRVNcblB91ua2Oe1_bNhKL3TznvHhitRNB2Q7xoHj2ufbjL1STlIL8XfeGIde4fw=s0" alt="ALX School logo">
