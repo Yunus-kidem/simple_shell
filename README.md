@@ -175,7 +175,7 @@ Username@your-regular-prompt:~$ man ./man_1_simple_shell
 Project Done in 15 Day
 
 ## Authors
-* Yunus Kidem [Yunus-Kidem](https://github.com/Theemiss)
+* Yunus Kidem [Yunus-Kidem](https://github.com/Yunus-kidem)
 * Obed Amoako [Obed Amoako ](https://github.com/Obed101)
 
 <p align="center">
