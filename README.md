@@ -1,11 +1,11 @@
-# Simple Shell
+# Simple Shell By A Team Of Two
 
 ### Introduction
 This repository is a [ALX project](https://www.alxafrica.com/software/) Project. This project consisted in writing a shell like sh (Bourne Shell) by Stephen Bourne  , in **C**, using a limited number of standard library functions, So Instead we used our own function that we rewrited over the past three month [Here](https://github.com/Yunus-kidem/alx-low_level_programming)
 
-The goal in this project was to make us understand how a shell works.   
+The goal in this project was to make us understand how a shell works.
 
-## Usage 
+## Usage
 In order to run this program, 
 
 Clone This Repo
@@ -95,7 +95,7 @@ $ exit
 Username@your-regular-prompt:~$ 
 
 ```
-**Case Exit Statue**
+**Case Exit Status**
 ```
 Username@your-regular-prompt:~$ ./hsh
 $ exit 98
