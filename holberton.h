@@ -19,6 +19,11 @@ extern char **environ;
 #include <errno.h>
 #include <linux/limits.h>
 
+/**###### Built-in funcs ######*/
+
+int built_exit(char **args);
+int built_env(char **args);
+
 /**###### STRING FUNCTION ######*/
 
 char *_strtok(char *str, const char *tok);
