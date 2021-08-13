@@ -26,3 +26,38 @@ void _puts(char *str)
 _putchar('\n');
 return;
 }
+/**
+ * intlen - Determine Length Of Int
+ * @num: Given Int
+ * Return: Length Of Int
+ */
+int intlen(int num)
+{
+	int len = 0;
+
+	while (num != 0)
+	{
+		len++;
+		num /= 10;
+	}
+	return (len);
+}
+/**
+ * _strcpy - Copies Source To Destination Char
+ * @dest:Destination
+ * @src:Source
+ * Return: Copie Of Char *
+ */
+char *_strcpy(char *dest, char *src)
+{
+int i;
+
+i = 0;
+	while (src[i])
+	{
+		dest[i] = src[i];
+		i++;
+	}
+dest[i] = '\0';
+return (dest);
+}
