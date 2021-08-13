@@ -1,0 +1,29 @@
+#include "holberton.h"
+
+/**
+ * built_exit - exit.
+ * @args:  arguments.
+ * Return: Always returns 0, to terminate execution.
+ */
+int built_exit(__attribute__((unused)) char **args)
+{
+	exit(1);
+}
+/**
+ * built_env - print environ
+ * @args: arguments
+ * Return: Always returns 1, to continue executing.
+ */
+int built_env(__attribute__((unused)) char **args)
+{
+	char **ptr;
+
+	ptr = environ;
+
+	while (*ptr)
+	{
+		printf("%s\n", *ptr);
+		ptr++;
+	}
+	return (1);
+}
