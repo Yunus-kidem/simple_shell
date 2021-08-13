@@ -23,6 +23,8 @@ extern char **environ;
 
 int built_exit(char **args);
 int built_env(char **args);
+int built_cd(char **args);
+int built_help(char **args);
 
 /**###### STRING FUNCTION ######*/
 
