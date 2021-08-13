@@ -2,8 +2,8 @@
 
 /**
  * _atoi - converts string to integer
- * @s:string
- * Return:int
+ * @s: string To be converted
+ * Return: converted integer
  */
 int _atoi(char *s)
 {
@@ -29,7 +29,7 @@ int i, j, n, x;
  * _strcmp - Compare Two String
  * @s1:String 1
  * @s2:String 2
- * Return: 0 If Identical Otherwise How Much Diffrent
+ * Return: 0 If Identical Otherwise How Much Diffrent They Are
  */
 int _strcmp(char *s1, char *s2)
 {
