@@ -36,7 +36,7 @@ If the command or path are not found, the program returns error message.
 .PP
 .B Interactive mode
 .PP
-coolbean$ ls -l -a
+kidemamoako$ ls -l -a
 .PP
 .B Non-interactive moode
 .PP
