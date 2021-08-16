@@ -1,4 +1,4 @@
-.TH man 1 "13-Aug-2021" "v12.0" "Simple Shell Project"
+.TH man 1 "13-Aug-2021" "v12.0" "Implementation Of The Linux Shell"
 .SH NAME
 .B SSP
 -
@@ -7,41 +7,79 @@
 [command string]
 .PP
 .SH DESCRIPTION
-This is a simplistic implementation of the Linux shell commands. It can be executed with the command
+.B ./shell
+- [command][argurments]
+.PP
+This is a simplistic implementation of the Linux shell commands. It can be executed with the <./shell> command. <./shell> 
+is a custom-made command line interpreter that reads and executes basic commands from user input exactly as
+any standar unix-like operating systems shell program would.
 .PP
 .SH SHELL BUILT-IN COMMANDS
 .SS env
     Print the environment variables to STDOUT
 .SS exit
     Exit the shell.
+.PP
+.SH USAGE
+This simple shell accepts user commands from standard input. The command is passed to the shell when the user presses the enter key.  This simple shell is capable of performing the following actions:
+
+Tokennizes command line string into null terminated array.
+
+Searches for exact path of command if the exact path is not given by user.
+
+Executes the command passed by user.
+
+0;136;0cIf the command or path are not found, the program returns error message.
+.PP
+.SH EXAMPLES
+.PP
+.B Interactive mode
+.PP
+coolbean$ ls -l -a
+.PP
+.B Non-interactive moode
+.PP
+.RE
+echo ls -l -a | ./shell
+.PP
+.SH BUILTINS
+.SB
+.IP env
+-   Prints out environmental variables.
+.SB
+.IP exit
+-   Exits ./shell and frees any memory that was allocated during program use.
+.SB
+.IP ^C
+-   Shell will not quit when user types Ctrl + c.
+.SB
+.IP cd
+-   Changes the current directory of the process.
 .SH COMMAND EXECUTION
-After a command is read by the interpreter, it will be split into tokens. Depending on input, the  following actions will take place
+After a command is read by the interpreter, it will be split into tokens. Depending on input, the  following actions will take place:
 .PP
- If the command is a builtin, the Shell will  search the PATH variable for the directory containing the command.
+If the command is a builtin, the Shell will  search the PATH variable for the directory containing the command.
 .PP
-If the search is  successful,  the shell executes the command
+If the search is  successful,  the shell executes the command.
 .SH  ENVIRONMENT
 When a program is invoked, it is given an array of strings called the environment.
 .SH PROMPT
 The shell will display the prompt through the PS1, ready to take the next command.
-.PP
-.SHS SEE ALSO
-bash(1), csh(1), ksh(1), printf(1), login(1), echo(1), getopt(1), test(1)
 .SH BUGS
 No known bugs yet.
-.PP
-.SB Source Code:
-.UR
-.URL
-.RS
-.SS
+.P
+.SH
+Source Code:
 .I
 https://github.com/yunus-kidem/simple_shell
 .PP
 .SH AUTHORS:
-Obed Amoako
-and Yunus Kidem Tesfaye
+OBED AMOAKO and YUNUS KIDEM TESFAYE
 .P
 .SH Report bugs to
 .I
 https://github.com/yunus-kidem/simple_shell/issues
+.PP
+.SH
+SEE ALSO
+bash(1), cd(1POSIX), echo(1), getopt(1), ls(1)
