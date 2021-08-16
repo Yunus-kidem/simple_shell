@@ -21,7 +21,8 @@ any standar unix-like operating systems shell program would.
     Exit the shell.
 .PP
 .SH USAGE
-This simple shell accepts user commands from standard input. The command is passed to the shell when the user presses the enter key.  This simple shell is capable of performing the following actions:
+This simple shell accepts user commands from standard input. The command is passed to the shell
+when the user presses the enter key.  This simple shell is capable of performing the following actions:
 
 Tokennizes command line string into null terminated array.
 
