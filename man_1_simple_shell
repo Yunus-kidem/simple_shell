@@ -4,21 +4,15 @@
 -
 .BR man_1_simple_shell
 .SH SYNOPSIS
-[command string]
-.PP
-.SH DESCRIPTION
-.B ./shell
+.B ./hsh
 - [command][argurments]
 .PP
-This is a simplistic implementation of the Linux shell commands. It can be executed with the <./shell> command. <./shell> 
+.SH DESCRIPTION
+.PP
+This is a simplistic implementation of the Linux shell commands. It can be executed with the <./hsh> command. <./hsh> 
 is a custom-made command line interpreter that reads and executes basic commands from user input exactly as
 any standar unix-like operating systems shell program would.
-.PP
-.SH SHELL BUILT-IN COMMANDS
-.SS env
-    Print the environment variables to STDOUT
-.SS exit
-    Exit the shell.
+
 .PP
 .SH USAGE
 This simple shell accepts user commands from standard input. The command is passed to the shell
@@ -36,20 +30,20 @@ If the command or path are not found, the program returns error message.
 .PP
 .B Interactive mode
 .PP
-kidemamoako$ ls -l -a
+username@yourregularprompt$ ls -l -a
 .PP
 .B Non-interactive moode
 .PP
 .RE
-echo ls -l -a | ./shell
+echo ls -l -a | ./hsh
 .PP
 .SH BUILTINS
 .SB
 .IP env
--   Prints out environmental variables.
+-   Prints out environmental variables to stdout.
 .SB
 .IP exit
--   Exits ./shell and frees any memory that was allocated during program use.
+-   Exits ./hsh and frees any memory that was allocated during program use.
 .SB
 .IP ^C
 -   Shell will not quit when user types Ctrl + c.
