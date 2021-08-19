@@ -6,20 +6,19 @@ This repository is a [ALX project](https://www.alxafrica.com/software/) Project.
 The goal in this project was to make us understand how a shell works.
 
 ## Usage
-In order to run this program, 
-
+In order to run this program,
 Clone This Repo
 
 `` https://github.com/Yunus-kidem/simpleShell ``
 
-compile it with  
+compile it with
 
-`gcc 4.8.4 -Wall -Werror -Wextra -pedantic *.c -o hsh`.  
-You can then run it by invoking `./hsh` in that same directory.  
+`gcc 4.8.4 -Wall -Werror -Wextra -pedantic *.c -o hsh`.
+You can then run it by invoking `./hsh` in that same directory.
 
 ### How to use it
-In order to use this shell, in a terminal, first run the program:    
-`prompt$ ./hsh`  
+In order to use this shell, in a terminal, first run the program:
+`prompt$ ./hsh`
 It will then display a simple prompt and wait for commands.  
 `$ `   
 A command will be of the type `$ command`  

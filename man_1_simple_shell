@@ -9,7 +9,7 @@
 .PP
 .SH DESCRIPTION
 .PP
-This is a simplistic implementation of the Linux shell commands. It can be executed with the <./hsh> command. <./hsh> 
+This is a simplistic implementation of the Unix Shell commands. It can be executed with the <./hsh> command. ./hsh 
 is a custom-made command line interpreter that reads and executes basic commands from user input exactly as
 any standar unix-like operating systems shell program would.
 
