@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  * _putchar - writes the character c to stdout
@@ -10,6 +10,7 @@ int _putchar(char c)
 {
 	return (write(1, &c, 1));
 }
+
 /**
  * _puts - Prints the string using _putchar
  * @str:pointer char
@@ -26,6 +27,7 @@ void _puts(char *str)
 _putchar('\n');
 return;
 }
+
 /**
  * intlen - Determine Length Of Int
  * @num: Given Int
@@ -42,11 +44,12 @@ int intlen(int num)
 	}
 	return (len);
 }
+
 /**
- * _strcpy - Copies Source To Destination Char
+ * _strcpy - Copies String From Source To Destination
  * @dest:Destination
  * @src:Source
- * Return: Copie Of Char *
+ * Return: Copy Of Char *
  */
 char *_strcpy(char *dest, char *src)
 {
