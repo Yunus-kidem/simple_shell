@@ -4,7 +4,7 @@
 /**###### environ var ######*/
 
 extern char **environ;
-
+char *_parse_path(char *env[], char *pat, int *flag);
 /**###### LIBS USED ######*/
 
 #include <stdio.h>
