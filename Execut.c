@@ -32,7 +32,7 @@ int launch(char **argv)
 	return (1);
 }
 /**
- * execute - execute
+ * execute - function for function calls
  * @argv: double pointer
  * @path: PATH array
  * Return: none

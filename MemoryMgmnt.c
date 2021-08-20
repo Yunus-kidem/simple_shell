@@ -85,24 +85,27 @@ void *fill_an_array(void *a, int el, unsigned int len)
 	}
 	return (a);
 }
-/**
- * _calloc -  Allocates Memory For An Array, Using Malloc.
- * @size: Size
- * Return: Void Pointer
- */
-void *_calloc(unsigned int size)
-{
-	char *a;
-	unsigned int i;
 
-	if (size == 0)
-	return (NULL);
-	a = malloc(size);
-	if (a == NULL)
-	return (NULL);
-	for (i = 0; i < size; i++)
-	{
-		a[i] = '\0';
-	}
-	return (a);
+/**
+ * _calloc - allocates multiple blocks of memory
+ *@nmemb: Blocks of memory for allocation
+ *@size: the size to add
+ *
+ * Return: a pointer on success
+ */
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	unsigned int i;
+	char *ptr;
+
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+
+	ptr = malloc(size * nmemb);
+	if (ptr == NULL)
+		return (NULL);
+
+	for (i = 0; i < (size * nmemb); i++)
+		ptr[i] = 0;
+	return (ptr);
 }

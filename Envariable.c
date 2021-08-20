@@ -5,7 +5,7 @@
  * @name: nam
  * Return: enviroment
  */
-char *_getenv(const char *name)
+char *_getenv(char *name)
 {
 	char *delim = "=";
 	char *token;

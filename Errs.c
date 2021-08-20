@@ -1,4 +1,5 @@
-#include "shell.h"
+#include "main.h"
+
 #define INT_DECIMAL_STRING_SIZE(int_type)
 /**
  *  _prerror - Print Custome Error
@@ -23,10 +24,10 @@ void _prerror(char **argv, int c, char **cmd)
 }
 /**
  * errorhandler - handles error message text
- * @av: argv
+ * @av: argument vector
  * @input: user input
- * @count: for line #
- * Return: void
+ * @count: for line number
+ *
  */
 void errorhandler(char *av, char *input, int count)
 {
@@ -35,7 +36,7 @@ void errorhandler(char *av, char *input, int count)
 	int len2 = _strlen(input);
 	int len3 = 0;
 
-	countstr = int_to_str(count);
+	countstr = _itoa(count);
 	if (!countstr)
 		return;
 	len3 = _strlen(countstr);
