@@ -98,6 +98,8 @@ int display_help(char **cmd, int er);
 int echo_bul(char **cmd, int er);
 void  exit_bul(char **cmd, char *input, char **argv, int c);
 int print_echo(char **cmd);
+void print_number(unsigned int n);
+void print_number_in(int n);
 node_t build_node(void);
 void delete_memory(char **table, int value);
 int execute(char **argv, path_t *path);
