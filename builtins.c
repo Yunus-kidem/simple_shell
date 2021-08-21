@@ -34,9 +34,21 @@ int built_env(__attribute__((unused)) char **args)
  */
 int built_cd(char **args)
 {
+	size_t bfsize = 1024;
+	char *homedir = _getenv("HOME"), *home_dir;
+	char *olddir = _getenv("OLDPWD"), *old_dir;
+	char pwd[1024];
+	_strcpy(old_dir, olddir);
+
 	if (args[1] == NULL)
 	{
-		fprintf(stderr, "lsh: expected argument to \"cd\"\n");
+		_strcpy(home_dir, homedir);
+
+
+		chdir(home_dir);
+		getcwd(pwd, bfsize);
+
+		free(home_dir);
 	}
 	else
 	{
