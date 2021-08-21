@@ -45,7 +45,7 @@ int built_cd(char **args)
 		_strcpy(home_dir, homedir);
 
 
-		chdir(home_dir);
+		chdir(homedir);
 		getcwd(pwd, bfsize);
 
 		free(home_dir);
