@@ -75,11 +75,9 @@ typedef struct built_f
 } built_t;
 
 /**
- * struct builtin - structure for builtin cmd
+ * struct bulltin - structure for builtin cmd
  * @command: input command
  * @fun: pointer to function
- * @line: the line
- * @er: error
  */
 typedef struct  bulltin
 {
