@@ -110,7 +110,7 @@ void free_list(path_t *head);
 int (*get_built_func(char *s))(char **);
 int built_exit(char **args);
 int built_env(char **args);
-int built_cd(void);
+int built_cd(char **args);
 int built_help(char **args);
 
 /**###### STRING FUNCTION ######*/
