@@ -32,20 +32,22 @@ int built_env(__attribute__((unused)) char **args)
  * @args: arguments
  * Return: Always returns 1, to continue executing.
  */
-int built_cd(char **args)
+int built_cd(void)
 {
 	size_t bfsize = 1024;
 	char *homedir = _getenv("HOME"), *home_dir;
 	char *olddir = _getenv("OLDPWD"), *old_dir;
 	char pwd[1024];
+	char **args[];
+
 	_strcpy(old_dir, olddir);
 
-	if (args[1] == NULL)
+	if (args[1] == NULL || args[1] == "~")
 	{
 		_strcpy(home_dir, homedir);
 
 
-		chdir(homedir);
+		chdir(home_dir);
 		getcwd(pwd, bfsize);
 
 		free(home_dir);
@@ -78,7 +80,7 @@ int built_help(__attribute__((unused)) char **args)
  * @s: char
  * Return: function (char **)
  */
-int (*get_built_func(char *s))(char **)
+/*int (*get_built_func(char *s))(char **)
 {
 	built_t fs[] = {
 		{"cd", built_cd},
