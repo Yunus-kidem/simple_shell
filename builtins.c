@@ -1,8 +1,8 @@
 #include "main.h"
 
 /**
- * built_exit - exit.
- * @args:  arguments.
+ * built_exit - exits the custom shell.
+ * @args:  arguments (the exit status)
  * Return: Always returns 0, to terminate execution.
  */
 int built_exit(__attribute__((unused)) char **args)
@@ -10,7 +10,7 @@ int built_exit(__attribute__((unused)) char **args)
 	exit(1);
 }
 /**
- * built_env - print environ
+ * built_env - print environment
  * @args: arguments
  * Return: Always returns 1, to continue executing.
  */
@@ -35,13 +35,13 @@ int built_env(__attribute__((unused)) char **args)
 int built_cd(char ** args)
 {
 	size_t bfsize = 1024;
-	char *homedir = _getenv("HOME"), *home_dir;
-	char *olddir = _getenv("OLDPWD"), *old_dir;
+	char *home_dir = 0, *homedir = _getenv("HOME");
+	char *old_dir = 0, *olddir = _getenv("OLDPWD");
 	char pwd[1024];
 
 	_strcpy(old_dir, olddir);
 
-	if (args[1] == NULL || args[1] == "~")
+	if (args[1] == NULL)
 	{
 		_strcpy(home_dir, homedir);
 
