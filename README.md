@@ -9,7 +9,7 @@ The goal in this project was to make us understand how a shell works.
 In order to run this program,
 Clone This Repo
 
-`` https://github.com/Yunus-kidem/simpleShell ``
+`` https://github.com/Yunus-kidem/simple_shell ``
 
 compile it with
 
