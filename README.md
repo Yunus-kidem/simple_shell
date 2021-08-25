@@ -51,7 +51,7 @@ it Handle All Three Togther Like `ls -l /var `
 
 it Handle Command Path Also Like `/bin/ls` And All The Option And Path Like `/bin/ls -l /var`
 
-it Handle Comments **#** 
+it Handles Comments **#**
 ## Examples Command
 **Example 1**
 ```
@@ -64,7 +64,7 @@ Username@your-regular-prompt:~$
 **Example 2**
 ```
 Username@your-regular-prompt:~$ ./hsh
-$ ls -l /tmp 
+$ ls -l /tmp
 -rw------- 1 username username    0 Dec  5 12:09 config-err-aAMZrR
 drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a44349733e78cb4abdff4-colord.service-V7DUzr
 drwx------ 3 root   root   4096 Dec  5 12:09 systemd-private-062a0eca7f2a44349733e78cb4abdff4-rtkit-daemon.service-ANGvoV
