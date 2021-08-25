@@ -1,6 +1,13 @@
 #include <stdio.h>
 
 int _putchar(char c);
+
+/**
+* _strcat - function that concatenates strings
+* @dest: destinatio of new str
+* @src: source of original str
+* Return: pointer to dest
+*/
 char *_strcat(char *dest, char *src)
 {
 	char *s = dest;

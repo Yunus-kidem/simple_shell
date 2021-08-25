@@ -18,8 +18,8 @@ char *readline(void)
 	return (buf);
 }
 /**
- * split_line - Generate argv vector
- *@buf: Line to be splitted
+ * splitline - Generate argv vector
+ * @buf: Line to be splitted
  * Return: double pointer char
  */
 

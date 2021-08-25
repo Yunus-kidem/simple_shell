@@ -19,12 +19,6 @@ char *read_line(void)
 }
 
 /**
- * split_line - Generate argv vector
- * @buf: Line to be splitted
- * Return: double pointer to the splitted line
- */
-
-/**
  * print_echo - Excute Normal Echo
  * @cmd: Parsed Command
  * Return: 0 Succes -1 Fail
@@ -56,7 +50,7 @@ int print_echo(char **cmd)
 	return (1);
 }
 /**
- * spli_line - function that splits line
+ * split_line - function that splits line
  * @buf: the line to split
  * Return: splitted line
  */

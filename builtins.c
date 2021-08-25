@@ -32,7 +32,7 @@ int built_env(__attribute__((unused)) char **args)
  * @args: arguments
  * Return: Always returns 1, to continue executing.
  */
-int built_cd(char ** args)
+int built_cd(char **args)
 {
 	size_t bfsize = 1024;
 	char *home_dir = 0, *homedir = _getenv("HOME");
